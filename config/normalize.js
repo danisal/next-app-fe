@@ -10,7 +10,6 @@ const normalize = css`
     *,
     *:before,
     *:after {
-        box-shadow: inherit;
         box-sizing: border-box;
         font-family: 'Source Sans Pro', sans-serif;
     }

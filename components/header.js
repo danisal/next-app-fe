@@ -12,7 +12,7 @@ Router.onRouteChangeError = () => {
     NProgress.done();
 };
 
-const StyledHeader = styled.header`
+const StyledHeader = styled.div`
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -23,6 +23,7 @@ const StyledHeader = styled.header`
     /* // TODO: probably it's not needed */
     height: 64px;
     z-index: ${props => props.theme.zIndex.appBar};
+    box-shadow: ${props => props.theme.shadows[4]};
 `;
 
 const AppButton = styled.button`
