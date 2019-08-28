@@ -16,7 +16,7 @@ function CardHeader(params) {
         <StyledCardHeader>
             <h5>Title</h5>
             <p>
-                <time datetime="2019-08-12"></time>
+                <time dateTime="2019-08-12"></time>
                 2019.08.12
             </p>
         </StyledCardHeader>

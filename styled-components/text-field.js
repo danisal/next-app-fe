@@ -41,7 +41,12 @@ function TextField({ label, required, helperText, ...rest }) {
             <StyledLabel htmlFor={transformedLabel} required={required}>
                 {label}
             </StyledLabel>
-            <StyledInput required={required} name={transformedLabel} id={transformedLabel} {...rest} />
+            <StyledInput
+                required={required}
+                name={transformedLabel}
+                id={transformedLabel}
+                {...rest}
+            />
             <span>{helperText}</span>
         </Container>
     );

@@ -10,7 +10,11 @@ function Register() {
             <TextField required type="password" label="Password" />
             <TextField required type="password" label="Repeat Password" />
             {/* // TODO: try to pass the margin as css, not style */}
-            <Button style={{ marginTop: `3rem` }} type="submit" onClick={handleRegister}>
+            <Button
+                style={{ marginTop: `3rem` }}
+                type="submit"
+                onClick={handleRegister}
+            >
                 Register
             </Button>
         </Form>

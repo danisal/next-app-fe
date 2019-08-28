@@ -24,7 +24,12 @@ function Index(props) {
                 <Button style={{ marginTop: `3rem` }} type="submit">
                     Login
                 </Button>
-                <Button margins={[`top`]} type="button" variant="link" onClick={handleForgotPassword}>
+                <Button
+                    margins={[`top`]}
+                    type="button"
+                    variant="link"
+                    onClick={handleForgotPassword}
+                >
                     Forgot password?
                 </Button>
             </Form>
