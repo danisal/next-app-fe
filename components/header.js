@@ -57,10 +57,7 @@ const BackButton = styled.button`
 function Header() {
     const router = useRouter();
 
-    console.log(router);
-    const { pathname } = router;
-
-    const showBackButton = (pathname.match(/\//g) || []).length >= 2;
+    const showBackButton = (router?.pathname.match(/\//g) || []).length >= 2;
 
     const handleBack = () => {
         router.back();
