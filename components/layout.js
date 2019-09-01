@@ -9,10 +9,14 @@ import Meta from './meta';
 
 const theme = {
     colors: {
-        primary: `#4169E1`,
+        royalBlue: `#4169E1`,
         white: `#ffffff`,
         ghostWhite: `#F8F8FF`,
         dimGrey: `#696969`,
+        darkGrey: `#a9a9a9`,
+        gainsboro: `#dcdcdc`,
+        whiteSmoke: `#f5f5f5`,
+        darkSlateBlue: `#483d8b`,
     },
     zIndex: {
         mobileStepper: 1000,
