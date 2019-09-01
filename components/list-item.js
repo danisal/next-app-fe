@@ -22,10 +22,10 @@ const StyledListItem = styled.li`
     }
 `;
 
-function ListItem({ children }) {
+function ListItem({ children, to }) {
     return (
         <StyledListItem>
-            <Link href="settings/account">
+            <Link href={to}>
                 <a>
                     {children}
                     <Chevron height={14} />
@@ -37,6 +37,7 @@ function ListItem({ children }) {
 
 ListItem.propTypes = {
     children: PropTypes.node,
+    to: PropTypes.string,
 };
 
 export default ListItem;
