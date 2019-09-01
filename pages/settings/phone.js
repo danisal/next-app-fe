@@ -1,5 +1,7 @@
+import { LoggedInContainer } from '../../components';
+
 function Phone() {
-    return <div>Phone settings</div>;
+    return <LoggedInContainer>Phone settings</LoggedInContainer>;
 }
 
 export default Phone;

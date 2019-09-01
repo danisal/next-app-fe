@@ -8,5 +8,6 @@ export { default as Content } from './content';
 export { default as Header } from './header';
 export { default as Layout } from './layout';
 export { default as List } from './list';
-export { default as ListItem } from './list-item';
 export { default as ListHeader } from './list-header';
+export { default as ListItem } from './list-item';
+export { default as LoggedInContainer } from './logged-in-container';

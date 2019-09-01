@@ -1,5 +1,7 @@
+import { LoggedInContainer } from '../../components';
+
 function Password() {
-    return <div>Password settings</div>;
+    return <LoggedInContainer>Password settings</LoggedInContainer>;
 }
 
 export default Password;

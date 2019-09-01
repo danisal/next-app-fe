@@ -1,5 +1,7 @@
+import { LoggedInContainer } from '../../components';
+
 function UserName() {
-    return <div>Username settings</div>;
+    return <LoggedInContainer>Username settings</LoggedInContainer>;
 }
 
 export default UserName;

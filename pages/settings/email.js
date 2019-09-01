@@ -1,5 +1,7 @@
+import { LoggedInContainer } from '../../components';
+
 function Email() {
-    return <div>Email settings</div>;
+    return <LoggedInContainer>Email settings</LoggedInContainer>;
 }
 
 export default Email;
