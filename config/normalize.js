@@ -1,10 +1,13 @@
 import { css } from '@emotion/core';
 
+import colors from './colors';
+
 const normalize = css`
     html {
         box-sizing: border-box;
         font-size: 16px;
-        color: #333;
+        color: ${colors.darkGrey[900]};
+        scroll-behavior: smooth;
     }
 
     *,
@@ -12,6 +15,14 @@ const normalize = css`
     *:after {
         box-sizing: border-box;
         font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    input,
+    button {
+        :focus {
+            outline-width: 1px;
+            outline-color: ${colors.royalBlue[600]};
+        }
     }
 
     body {
