@@ -6,11 +6,11 @@ import Chevron from '../static/icons/chevron.svg';
 
 const StyledListItem = styled.li`
     cursor: pointer;
-    border-top: 1px solid ${props => props.theme.colors.darkGrey};
+    border-top: 1px solid ${props => props.theme.colors.darkGrey[600]};
 
     :active,
     :hover {
-        background-color: ${props => props.theme.colors.whiteSmoke};
+        background-color: ${props => props.theme.colors.darkGrey[200]};
     }
 
     a {

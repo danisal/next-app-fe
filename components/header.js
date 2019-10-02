@@ -20,8 +20,8 @@ const StyledHeader = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: ${props => props.theme.colors.royalBlue};
-    color: ${props => props.theme.colors.white};
+    background-color: ${props => props.theme.colors.royalBlue[500]};
+    color: ${props => props.theme.colors.darkGrey[100]};
     padding: 0 1.5rem;
     /* // TODO: probably it's not needed */
     height: 64px;
@@ -38,7 +38,7 @@ const BackButton = styled.button`
     background-color: transparent;
     border-radius: 50%;
     border: none;
-    color: ${props => props.theme.colors.darkSlateBlue};
+    color: ${props => props.theme.colors.royalBlue[800]};
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ const BackButton = styled.button`
 
     :active,
     :hover {
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: ${props => props.theme.colors.royalBlue[200]};
     }
 `;
 
