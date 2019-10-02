@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 function transformLabel(str) {
-    return str.replace(/\s/g, `-`).toLowerCase();
+    return str?.replace(/\s/g, `-`).toLowerCase();
 }
 
 const Container = styled.div`
@@ -17,16 +17,20 @@ const Container = styled.div`
 `;
 
 const StyledInput = styled.input`
+    background-color: ${props => props.theme.colors.royalBlue[200]};
+    border-radius: 4px;
+    border: 0;
     display: block;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    border-radius: 2px;
-    padding: 0.5rem 1rem;
     font-size: 16px;
+    padding: 0.75rem 1rem;
     width: 100%;
+
+    &[disabled] {
+        cursor: not-allowed;
+    }
 `;
 
 const StyledLabel = styled.label`
-    margin-left: 1rem;
     margin-bottom: 0.25rem;
     display: block;
 
