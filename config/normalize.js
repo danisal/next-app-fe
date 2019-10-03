@@ -14,7 +14,7 @@ const normalize = css`
     *:before,
     *:after {
         box-sizing: border-box;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: 'Lato', sans-serif;
     }
 
     input,

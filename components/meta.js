@@ -27,14 +27,10 @@ function Meta() {
                 href="https://fonts.gstatic.com/"
                 crossOrigin=""
             />
-            {/* <link
-                href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap"
-                rel="stylesheet"
-            /> */}
             <link
-                href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap"
+                href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
                 rel="stylesheet"
-            />
+            ></link>
         </Head>
     );
 }
