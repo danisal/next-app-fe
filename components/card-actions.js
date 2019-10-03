@@ -4,6 +4,9 @@ const StyledCardActions = styled.footer`
     display: flex;
     flex-direction: column;
     padding: 8px;
+    background-color: ${props => props.theme.colors.darkGrey[100]};
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
 `;
 
 const ActionsWrapper = styled.div`
