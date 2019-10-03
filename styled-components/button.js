@@ -20,8 +20,8 @@ const StyledButtonBase = styled.button`
     min-height: 40px;
     min-width: 140px;
     padding: 0.5rem 1rem;
-    text-transform: uppercase;
     transition: ease 0.2s;
+    font-weight: 700;
 
     float: ${({ align }) => align};
 
@@ -55,9 +55,9 @@ const StyledButtonBase = styled.button`
 `;
 
 const ButtonPrimary = styled(StyledButtonBase)`
-    background-color: ${props => props.theme.colors.royalBlue[500]};
-    box-shadow: 0 2px 4px ${props => props.theme.colors.royalBlue[300]};
-    color: ${props => props.theme.colors.royalBlue[800]};
+    background-color: ${props => props.theme.colors.royalBlue[400]};
+    box-shadow: 0 2px 8px ${props => props.theme.colors.royalBlue[300]};
+    color: ${props => props.theme.colors.royalBlue[900]};
 
     :hover {
         box-shadow: 0 4px 8px ${props => props.theme.colors.royalBlue[300]};
@@ -65,9 +65,9 @@ const ButtonPrimary = styled(StyledButtonBase)`
 `;
 
 const ButtonError = styled(StyledButtonBase)`
-    background-color: ${props => props.theme.colors.orangeRed[500]};
+    background-color: ${props => props.theme.colors.orangeRed[400]};
     box-shadow: 0 2px 4px ${props => props.theme.colors.orangeRed[300]};
-    color: ${props => props.theme.colors.orangeRed[800]};
+    color: ${props => props.theme.colors.orangeRed[900]};
 
     :hover {
         box-shadow: 0 4px 8px ${props => props.theme.colors.orangeRed[300]};
@@ -75,9 +75,9 @@ const ButtonError = styled(StyledButtonBase)`
 `;
 
 const ButtonSuccess = styled(StyledButtonBase)`
-    background-color: ${props => props.theme.colors.limeGreen[500]};
+    background-color: ${props => props.theme.colors.limeGreen[400]};
     box-shadow: 0 2px 4px ${props => props.theme.colors.limeGreen[300]};
-    color: ${props => props.theme.colors.limeGreen[800]};
+    color: ${props => props.theme.colors.limeGreen[900]};
 
     :hover {
         box-shadow: 0 4px 8px ${props => props.theme.colors.limeGreen[300]};
@@ -85,9 +85,9 @@ const ButtonSuccess = styled(StyledButtonBase)`
 `;
 
 const ButtonWarning = styled(StyledButtonBase)`
-    background-color: ${props => props.theme.colors.gold[500]};
+    background-color: ${props => props.theme.colors.gold[400]};
     box-shadow: 0 2px 4px ${props => props.theme.colors.gold[300]};
-    color: ${props => props.theme.colors.gold[800]};
+    color: ${props => props.theme.colors.gold[900]};
 
     :hover {
         box-shadow: 0 4px 8px ${props => props.theme.colors.gold[300]};
