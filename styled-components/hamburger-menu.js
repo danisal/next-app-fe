@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import styled from '@emotion/styled';
+
+import SideNavContext from '../context/side-navigation-context';
 
 const Wrapper = styled.div`
     position: relative;
@@ -91,13 +93,7 @@ const Label = styled.label`
 `;
 
 function HamburgerMenu(params) {
-    const [active, setActive] = useState(false);
-
-    const toggle = event => {
-        event.preventDefault();
-
-        setActive(s => !s);
-    };
+    const { active, toggle } = useContext(SideNavContext);
 
     return (
         <Wrapper>
