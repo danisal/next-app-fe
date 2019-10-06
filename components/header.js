@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import NProgress from 'nprogress';
 import styled from '@emotion/styled';
 
-import BackArrow from '../static/icons/back-arrow.svg';
+import ArrowLeft from '../static/icons/arrow-left.svg';
 
 Router.onRouteChangeStart = () => {
     NProgress.start();
@@ -42,9 +42,9 @@ const BackButton = styled.button`
     cursor: pointer;
     display: flex;
     justify-content: center;
-    margin-right: 1rem;
-    min-height: 33px;
-    min-width: 33px;
+    margin-right: 0.5rem;
+    min-height: 32px;
+    min-width: 32px;
     padding: 0;
     text-decoration: none;
 
@@ -68,7 +68,7 @@ function Header() {
             <AppButton>button</AppButton>
             {showBackButton && (
                 <BackButton onClick={handleBack}>
-                    <BackArrow width={16} />
+                    <ArrowLeft width={16} />
                 </BackButton>
             )}
             <h6>location</h6>
