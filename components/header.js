@@ -4,6 +4,7 @@ import NProgress from 'nprogress';
 import styled from '@emotion/styled';
 
 import ArrowLeft from '../static/icons/arrow-left.svg';
+import { HamburgerMenu } from '../styled-components';
 
 Router.onRouteChangeStart = () => {
     NProgress.start();
@@ -22,7 +23,7 @@ const StyledHeader = styled.div`
     align-items: center;
     background-color: ${props => props.theme.colors.royalBlue[500]};
     color: ${props => props.theme.colors.darkGrey[100]};
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 0 0;
     /* // TODO: probably it's not needed */
     height: 64px;
     z-index: ${props => props.theme.zIndex.appBar};
@@ -65,7 +66,7 @@ function Header() {
 
     return (
         <StyledHeader>
-            <AppButton>button</AppButton>
+            <HamburgerMenu />
             {showBackButton && (
                 <BackButton onClick={handleBack}>
                     <ArrowLeft width={16} />
