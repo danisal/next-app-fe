@@ -16,10 +16,16 @@ const StyledListItem = styled.li`
             color: ${props => props.theme.colors.royalBlue[100]};
 
             span {
-                background-color: ${props => props.theme.colors.royalBlue[100]};
+                background-color: ${props =>
+                    props.navigation
+                        ? `inherit`
+                        : props.theme.colors.royalBlue[100]};
 
                 svg {
-                    color: ${props => props.theme.colors.royalBlue[800]};
+                    color: ${props =>
+                        props.navigation
+                            ? `inherit`
+                            : props.theme.colors.royalBlue[800]};
                 }
             }
         }
@@ -34,7 +40,10 @@ const StyledListItem = styled.li`
         color: ${props => props.theme.colors.royalBlue[800]};
 
         span {
-            background-color: ${props => props.theme.colors.royalBlue[800]};
+            background-color: ${props =>
+                props.navigation
+                    ? `inherit`
+                    : props.theme.colors.royalBlue[800]};
             border-radius: 50%;
             min-height: 32px;
             min-width: 32px;
@@ -43,16 +52,19 @@ const StyledListItem = styled.li`
             justify-content: center;
 
             svg {
-                color: ${props => props.theme.colors.royalBlue[100]};
+                color: ${props =>
+                    props.navigation
+                        ? `inherit`
+                        : props.theme.colors.royalBlue[100]};
                 height: 16px;
             }
         }
     }
 `;
 
-function ListItem({ children, to }) {
+function ListItem({ children, to, navigation }) {
     return (
-        <StyledListItem>
+        <StyledListItem navigation={navigation}>
             <Link href={to}>
                 <a>
                     {children}
@@ -67,6 +79,7 @@ function ListItem({ children, to }) {
 
 ListItem.propTypes = {
     children: PropTypes.node,
+    navigation: PropTypes.bool,
     to: PropTypes.string,
 };
 
